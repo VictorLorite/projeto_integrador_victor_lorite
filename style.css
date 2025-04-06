@@ -1,0 +1,154 @@
+:root {
+    --cor-primaria: #2c3e50;
+    --cor-secundaria: #3498db;
+    --cor-texto: #333;
+    --cor-fundo: #f9f9f9;
+    --cor-borda: #ddd;
+    --cor-sucesso: #27ae60;
+    --cor-perigo: #e74c3c;
+    --cor-alerta: #f39c12;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projetos h2 {
+    margin-bottom: 1.5rem;
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 0.5rem;
+}
+
+.novo-projeto {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    background-color: var(--cor-sucesso);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.editar {
+    background-color: var(--cor-secundaria);
+}
+
+.excluir {
+    background-color: var(--cor-perigo);
+}
+
+.cancelar {
+    background-color: var(--cor-alerta);
+}
+
+.salvar {
+    background-color: var(--cor-sucesso);
+}
+
+.acoes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.campo textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.botoes {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--cor-primaria);
+    color: white;
+    margin-top: 2rem;
+}
